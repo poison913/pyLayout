@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['layout.py'],
+a = Analysis(['excel2json.py'],
              pathex=['D:\\pyCode\\CalFlow'],
              binaries=[],
              datas=[],
@@ -21,7 +21,7 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='layout',
+          name='excel2json',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
@@ -34,4 +34,4 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='layout')
+               name='excel2json')
